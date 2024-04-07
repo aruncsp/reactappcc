@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+// import Greet from "./Component/greet";
+// import GreetClass from "./Component/greetClass";
+// import Counter from "./Component/counter";
+// import Employee from "./Component/Employee";
+// import ConditionalRendering from "./Component/Login";
+import NumberState from "./Component/NumberState";
+import OrderStatus from "./Component/OrderStatus";
 
 function App() {
+  const employee = {
+    name: "John",
+    age: 30,
+    dept: "IT",
+    address: {
+      street: "10, Downing St.",
+      city: "London",
+    },
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Greet firstName="Arun" lastName="Kumar" data={employee} />
+      <Greet firstName="James" lastName="Bond" data={employee} />
+
+      <GreetClass firstName="JamesClass" lastName="BondClass" data={employee} /> */}
+      {/* <Counter /> */}
+      {/* <Employee /> */}
+      {/* <ConditionalRendering /> */}
+
+      {/* <NumberState /> */}
+      <OrderStatus />
     </div>
   );
 }

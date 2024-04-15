@@ -1,7 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import BookList from "./Component/BookList";
-import AlbumList from "./Component/AlbumList";
+import AlbumList from "./Component/AlbumListClass";
+// import PostListFunc from "./Component/PostListFunc";
+//import AlbumList from "./Component/AlbumList";
+//import PostList from "./Component/PostList";
+
+//import BookList from "./Component/BookList";
 //import CounterClass from "./Component/CounterClass";
 // import Greet from "./Component/greet";
 // import GreetClass from "./Component/greetClass";
@@ -35,6 +39,9 @@ function App() {
       {/* <OrderStatus /> */}
       {/* <BookList /> */}
       {/* <CounterClass /> */}
+      {/* <AlbumList /> */}
+      {/* <PostList /> */}
+      {/* <PostListFunc /> */}
       <AlbumList />
     </div>
   );

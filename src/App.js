@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import AlbumList from "./Component/AlbumListClass";
+import MyComponent from "./Component/MyComponent";
+
+//import PostListAxios from "./Component/PostListAxios";
+//import AlbumList from "./Component/AlbumListClass";
 // import PostListFunc from "./Component/PostListFunc";
 //import AlbumList from "./Component/AlbumList";
 //import PostList from "./Component/PostList";
@@ -42,7 +45,9 @@ function App() {
       {/* <AlbumList /> */}
       {/* <PostList /> */}
       {/* <PostListFunc /> */}
-      <AlbumList />
+      {/* <AlbumList /> */}
+      {/* <PostListAxios /> */}
+      <MyComponent />
     </div>
   );
 }

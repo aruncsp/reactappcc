@@ -6,21 +6,23 @@ function PostListFunc() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.org/posts`)
-      .then((response) => {
+    const getData = async () => {
+      try {
+        const response = await fetch(`https://jsonplaceholder.org/posts`);
         if (!response.ok) {
           throw new Error("An error occurred!");
         }
-        return response.json();
-      })
-      .then((data) => {
+        const data = await response.json();
+
         setPosts(data);
         setIsLoading(false);
-      })
-      .catch((error) => {
+      } catch (error) {
         setError(error.message);
         setIsLoading(false);
-      });
+      }
+    };
+
+    getData();
   }, []);
 
   if (isLoading) return <div>Loading...</div>;

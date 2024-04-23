@@ -1,0 +1,8 @@
+.mainComponent {
+  background-color: rgb(237, 234, 234);
+  border: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 500px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

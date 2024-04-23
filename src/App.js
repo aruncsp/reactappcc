@@ -1,13 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
-import MyComponent from "./Component/MyComponent";
+import RegisterRegEx from "./Component/Registration/RegisterRegEx";
+//import Register from "./Component/Registration/Register";
 
+// import Login from "./Component/Login/Login";
+//import MainComponent from "./Component/MainComponent";
+//import MyComponent from "./Component/MyComponent";
 //import PostListAxios from "./Component/PostListAxios";
 //import AlbumList from "./Component/AlbumListClass";
 // import PostListFunc from "./Component/PostListFunc";
 //import AlbumList from "./Component/AlbumList";
 //import PostList from "./Component/PostList";
-
 //import BookList from "./Component/BookList";
 //import CounterClass from "./Component/CounterClass";
 // import Greet from "./Component/greet";
@@ -47,7 +50,11 @@ function App() {
       {/* <PostListFunc /> */}
       {/* <AlbumList /> */}
       {/* <PostListAxios /> */}
-      <MyComponent />
+      {/* <MyComponent /> */}
+      {/* <MainComponent /> */}
+      {/* <Login /> */}
+      {/* <Register /> */}
+      <RegisterRegEx />
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import RegisterRegEx from "./Component/Registration/RegisterRegEx";
-//import Register from "./Component/Registration/Register";
+import FormWithUseRef from "./Component/Registration/FormWithUseRef";
 
+//import RegisterRegEx from "./Component/Registration/RegisterRegEx";
+//import Register from "./Component/Registration/Register";
 // import Login from "./Component/Login/Login";
 //import MainComponent from "./Component/MainComponent";
 //import MyComponent from "./Component/MyComponent";
@@ -54,7 +55,8 @@ function App() {
       {/* <MainComponent /> */}
       {/* <Login /> */}
       {/* <Register /> */}
-      <RegisterRegEx />
+      {/* <RegisterRegEx /> */}
+      <FormWithUseRef />
     </div>
   );
 }

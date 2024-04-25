@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import styles from "./Register.module.css";
+import axios from "axios";
 
 function FormWithUseRef() {
   const nameRef = useRef(null);
@@ -45,7 +46,7 @@ function FormWithUseRef() {
     setError((prevErrors) => ({ ...prevErrors, [name]: errorMessage }));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const user = {
@@ -60,6 +61,34 @@ function FormWithUseRef() {
 
     if (Object.values(errors).every((error) => error === "")) {
       console.log("Form is valid");
+
+      //   fetch("http://localhost:5001/api/users/", {
+      //     Method: "POST",
+      //     Headers: {
+      //       Accept: "application.json",s
+      //       "Content-Type": "application/json",
+      //     },
+      //     Body: JSON.stringify({
+      //       name: user.name,
+      //       email: user.email,
+      //       phone: user.phone,
+      //     }),
+      //   })
+      //     .then((response) => response.json())
+      //     .then((d) => console.log(d));
+
+      // fetch("http://localhost:5001/api/users/", {
+      //   method: "post",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: { user },
+      // }).then((response) => console.log(response.json()));
+
+      const response = await axios.post(
+        `http://localhost:5001/api/users/`,
+        user
+      );
+      const data = await response.data;
+      console.log(data);
     }
   }
 
